@@ -3,7 +3,7 @@ The growing ubiquity of Internet memes on social media platforms, such as Facebo
 meme studying. In this project, we propose the multimodal model newtork for humor detection on [memotion dataset](https://arxiv.org/pdf/2008.03781.pdf). Inspired by [ConcatBERT model], we implemented our multimodal model while the core "Gated Multimodal Layer" are proposed by this [arXiv paper] (https://arxiv.org/pdf/1702.01992.pdf)
 
 <p align="center">
-  <img src="https://github.com/terenceylchow124/Meme-MultiModal/blob/main/Project.png" width="600" height="300">
+  <img src="https://github.com/terenceylchow124/Meme-MultiModal/blob/main/Project.png" width="500" height="200">
 </p>
 
 # Dataset Preparation 
