@@ -8,7 +8,7 @@ meme studying. In this project, we propose the multimodal model newtork for humo
 
 # Dataset Preparation 
 In this project, memotion Dataset are mainly used while we apply transfer learning using Reddit Dataset.
-1. Download offical Memotion Dataset from [kaggle] (https://www.kaggle.com/williamscott701/memotion-dataset-7k)
+1. Download offical Memotion Dataset from [kaggle](https://www.kaggle.com/williamscott701/memotion-dataset-7k)
 2. Download and prepare sampled Reddit Dataset from [this repository](https://github.com/orionw/RedditHumorDetection)
 3. Put your Reddit and Memotion Dataset to ./data/reddit and ./data/memotion accordingly. 
 
