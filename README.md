@@ -1,6 +1,6 @@
 # Meme-MultiModal
 The growing ubiquity of Internet memes on social media platforms, such as Facebook, Twitter, Instagram and Reddit have become a unstoppable trend. Comprising of visual and textual information, memes typically convey various emotion (e.g. humor, sarcasm, offensive, motivational, and sentiment). Nevertheless, there is not much research attention toward meme emotion analysis. The main objective of this project is to bring the attention of the research community toward
-meme studying. In this project, we propose the multimodal model newtork for humor detection on [memotion dataset](https://arxiv.org/pdf/2008.03781.pdf). Inspired by [ConcatBERT model], we implemented our multimodal model while the core "Gated Multimodal Layer" are proposed by this [arXiv paper] (https://arxiv.org/pdf/1702.01992.pdf)
+meme studying. In this project, we propose the multimodal model newtork for humor detection on [memotion dataset](https://arxiv.org/pdf/2008.03781.pdf). Inspired by [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT), we implemented our multimodal model while the core "Gated Multimodal Layer" are proposed by this [arXiv paper](https://arxiv.org/pdf/1702.01992.pdf)
 
 <p align="center">
   <img src="https://github.com/terenceylchow124/Meme-MultiModal/blob/main/Project.png" width="550" height="300">
@@ -21,7 +21,7 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 # Pretrained Model 
 
 # Acknowledgment
-This code is partial borrowed from [ConcatBERT model] (https://github.com/IsaacRodgz/ConcatBERT).
+This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
 
 
 
