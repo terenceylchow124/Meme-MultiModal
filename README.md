@@ -18,7 +18,11 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 4. Training the MultiModal model using Memotion Dataset. Please make sure you set "train_reddit" to 0, "dataset" to "memotion" in utils/util_args. 
 
 # Pretrained Model 
-
+| Model         | Task          | Test Acc % | Macro-F1-Score %  |
+| ------------- | ------------- | ---------- | ----------------- |
+| ALBERT-512    | Reddit        | 71.99      | 71.95             |
+| ALBERT-VGG16  | Memotion      | 68.32      | 53.55             |
+ 
 # Acknowledgment
 This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
 
