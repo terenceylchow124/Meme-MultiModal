@@ -28,10 +28,10 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 
 # Pretrained Model 
 Our model acheives 54.57% of Macro-F1-Score on Memotion dataset, the resulted log file (i.e. result_A21.log) can be found under pre_trained_models. 
-| Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Model |
-| ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
-| ALBERT+FC        | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
-| ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | [52.99 (F1)](https://arxiv.org/pdf/2008.03781.pdf)  | [:white_check_mark:](https://drive.google.com/file/d/1Y78Kto6axhWLxf0mucsEW0WVCCHSjh-8/view?usp=sharing) |
+| Variant | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Download Link |
+| ------- | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
+| A2      | ALBERT+FC        | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
+| A21     | ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | [52.99 (F1)](https://arxiv.org/pdf/2008.03781.pdf)  | [:white_check_mark:](https://drive.google.com/file/d/1Y78Kto6axhWLxf0mucsEW0WVCCHSjh-8/view?usp=sharing) |
  
 # Acknowledgment
 This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
