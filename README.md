@@ -27,6 +27,7 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - run "python main.py"
 
 # Pretrained Model 
+Our model acheives 54.57% of Macro-F1-Score on Memotion dataset, the resulted log file (i.e. result_A21.log) can be found under pre_trained_models. 
 | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Model |
 | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
 | ALBERT+FC        | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
