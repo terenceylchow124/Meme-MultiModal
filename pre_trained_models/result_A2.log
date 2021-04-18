@@ -1,0 +1,86 @@
+2021-04-17 16:01:55,258 - Epoch  1 | Batch 100/607 | Time/Batch(ms) 422.62 | Train Loss 0.6130 | Acc 0.6250 | micro-score 0.6250 | macro-score 0.6113 | precision 0.7222 | recall 0.6500
+2021-04-17 16:02:38,966 - Epoch  1 | Batch 200/607 | Time/Batch(ms) 437.08 | Train Loss 0.5520 | Acc 0.6875 | micro-score 0.6875 | macro-score 0.6825 | precision 0.5909 | recall 0.9286
+2021-04-17 16:03:22,875 - Epoch  1 | Batch 300/607 | Time/Batch(ms) 439.08 | Train Loss 0.4945 | Acc 0.8438 | micro-score 0.8438 | macro-score 0.8398 | precision 0.8421 | recall 0.8889
+2021-04-17 16:04:06,966 - Epoch  1 | Batch 400/607 | Time/Batch(ms) 440.89 | Train Loss 0.4288 | Acc 0.8750 | micro-score 0.8750 | macro-score 0.8745 | precision 0.8824 | recall 0.8824
+2021-04-17 16:04:50,727 - Epoch  1 | Batch 500/607 | Time/Batch(ms) 437.40 | Train Loss 0.3654 | Acc 0.9062 | micro-score 0.9062 | macro-score 0.9054 | precision 0.8889 | recall 0.9412
+2021-04-17 16:05:35,307 - Epoch  1 | Batch 600/607 | Time/Batch(ms) 445.58 | Train Loss 0.3203 | Acc 0.9062 | micro-score 0.9062 | macro-score 0.9062 | precision 0.9333 | recall 0.8750
+2021-04-17 16:05:41,516 - Epoch  1 | Time 268.4969 sec | Train Loss 0.4613 | Train Acc 0.7802 | micro-score 0.7802 | macro-score 0.7802 | precision 0.7799 | recall 0.7806
+2021-04-17 16:05:41,516 - Epoch  1 | Time 268.4969 sec | Valid Loss 0.8441 | Valid Acc 0.6079 | mirco-score 0.6079 | macro-score 0.5596 | precision 0.8155 | recall 0.2772
+2021-04-17 16:06:26,537 - Epoch  2 | Batch 100/607 | Time/Batch(ms) 449.57 | Train Loss 0.2050 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9680 | precision 1.0000 | recall 0.9474
+2021-04-17 16:07:10,875 - Epoch  2 | Batch 200/607 | Time/Batch(ms) 443.38 | Train Loss 0.1790 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:07:55,511 - Epoch  2 | Batch 300/607 | Time/Batch(ms) 446.10 | Train Loss 0.1808 | Acc 0.9062 | micro-score 0.9062 | macro-score 0.9039 | precision 0.8571 | recall 0.9231
+2021-04-17 16:08:40,300 - Epoch  2 | Batch 400/607 | Time/Batch(ms) 447.68 | Train Loss 0.1636 | Acc 0.8438 | micro-score 0.8438 | macro-score 0.8436 | precision 0.8750 | recall 0.8235
+2021-04-17 16:09:24,990 - Epoch  2 | Batch 500/607 | Time/Batch(ms) 446.66 | Train Loss 0.1647 | Acc 0.9375 | micro-score 0.9375 | macro-score 0.9273 | precision 0.9000 | recall 0.9000
+2021-04-17 16:10:09,625 - Epoch  2 | Batch 600/607 | Time/Batch(ms) 446.12 | Train Loss 0.2000 | Acc 0.9375 | micro-score 0.9375 | macro-score 0.9375 | precision 0.9375 | recall 0.9375
+2021-04-17 16:10:15,951 - Epoch  2 | Time 274.3461 sec | Train Loss 0.1826 | Train Acc 0.9384 | micro-score 0.9384 | macro-score 0.9384 | precision 0.9412 | recall 0.9352
+2021-04-17 16:10:15,951 - Epoch  2 | Time 274.3461 sec | Valid Loss 1.1572 | Valid Acc 0.6112 | mirco-score 0.6112 | macro-score 0.5600 | precision 0.8454 | recall 0.2706
+2021-04-17 16:11:00,859 - Epoch  3 | Batch 100/607 | Time/Batch(ms) 449.07 | Train Loss 0.1196 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9685 | precision 1.0000 | recall 0.9333
+2021-04-17 16:11:45,528 - Epoch  3 | Batch 200/607 | Time/Batch(ms) 446.69 | Train Loss 0.1398 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9680 | precision 1.0000 | recall 0.9286
+2021-04-17 16:12:30,466 - Epoch  3 | Batch 300/607 | Time/Batch(ms) 449.37 | Train Loss 0.1062 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9672 | precision 1.0000 | recall 0.9231
+2021-04-17 16:13:15,180 - Epoch  3 | Batch 400/607 | Time/Batch(ms) 446.92 | Train Loss 0.1398 | Acc 0.9375 | micro-score 0.9375 | macro-score 0.9333 | precision 1.0000 | recall 0.8462
+2021-04-17 16:13:59,655 - Epoch  3 | Batch 500/607 | Time/Batch(ms) 444.51 | Train Loss 0.1278 | Acc 0.8750 | micro-score 0.8750 | macro-score 0.8730 | precision 0.9412 | recall 0.8421
+2021-04-17 16:14:44,186 - Epoch  3 | Batch 600/607 | Time/Batch(ms) 445.10 | Train Loss 0.1247 | Acc 0.9375 | micro-score 0.9375 | macro-score 0.9373 | precision 0.9333 | recall 0.9333
+2021-04-17 16:14:50,502 - Epoch  3 | Time 274.5251 sec | Train Loss 0.1259 | Train Acc 0.9655 | micro-score 0.9655 | macro-score 0.9655 | precision 0.9640 | recall 0.9671
+2021-04-17 16:14:50,502 - Epoch  3 | Time 274.5251 sec | Valid Loss 1.9777 | Valid Acc 0.6343 | mirco-score 0.6343 | macro-score 0.5941 | precision 0.8584 | recall 0.3201
+2021-04-17 16:15:35,090 - Epoch  4 | Batch 100/607 | Time/Batch(ms) 445.88 | Train Loss 0.1159 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9685 | precision 0.9333 | recall 1.0000
+2021-04-17 16:16:19,176 - Epoch  4 | Batch 200/607 | Time/Batch(ms) 440.86 | Train Loss 0.1045 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9661 | precision 0.9524 | recall 1.0000
+2021-04-17 16:17:03,516 - Epoch  4 | Batch 300/607 | Time/Batch(ms) 443.39 | Train Loss 0.1132 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9680 | precision 0.9286 | recall 1.0000
+2021-04-17 16:17:47,539 - Epoch  4 | Batch 400/607 | Time/Batch(ms) 440.17 | Train Loss 0.1038 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:18:31,780 - Epoch  4 | Batch 500/607 | Time/Batch(ms) 442.19 | Train Loss 0.1264 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:19:15,739 - Epoch  4 | Batch 600/607 | Time/Batch(ms) 439.40 | Train Loss 0.1174 | Acc 0.9375 | micro-score 0.9375 | macro-score 0.9365 | precision 0.8947 | recall 1.0000
+2021-04-17 16:19:21,866 - Epoch  4 | Time 271.3419 sec | Train Loss 0.1140 | Train Acc 0.9729 | micro-score 0.9729 | macro-score 0.9729 | precision 0.9726 | recall 0.9732
+2021-04-17 16:19:21,867 - Epoch  4 | Time 271.3419 sec | Valid Loss 1.7758 | Valid Acc 0.6277 | mirco-score 0.6277 | macro-score 0.5828 | precision 0.8667 | recall 0.3003
+2021-04-17 16:20:06,194 - Epoch  5 | Batch 100/607 | Time/Batch(ms) 443.28 | Train Loss 0.0714 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9685 | precision 1.0000 | recall 0.9333
+2021-04-17 16:20:50,100 - Epoch  5 | Batch 200/607 | Time/Batch(ms) 439.05 | Train Loss 0.0437 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:21:34,350 - Epoch  5 | Batch 300/607 | Time/Batch(ms) 442.49 | Train Loss 0.0569 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:22:18,524 - Epoch  5 | Batch 400/607 | Time/Batch(ms) 441.51 | Train Loss 0.0392 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:23:02,779 - Epoch  5 | Batch 500/607 | Time/Batch(ms) 442.34 | Train Loss 0.0317 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:23:47,035 - Epoch  5 | Batch 600/607 | Time/Batch(ms) 442.36 | Train Loss 0.0386 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:23:53,266 - Epoch  5 | Time 271.3769 sec | Train Loss 0.0472 | Train Acc 0.9901 | micro-score 0.9901 | macro-score 0.9901 | precision 0.9908 | recall 0.9894
+2021-04-17 16:23:53,266 - Epoch  5 | Time 271.3769 sec | Valid Loss 2.4898 | Valid Acc 0.5980 | mirco-score 0.5980 | macro-score 0.5366 | precision 0.8554 | recall 0.2343
+2021-04-17 16:24:37,659 - Epoch  6 | Batch 100/607 | Time/Batch(ms) 443.92 | Train Loss 0.0096 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:25:21,835 - Epoch  6 | Batch 200/607 | Time/Batch(ms) 441.76 | Train Loss 0.0135 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:26:06,207 - Epoch  6 | Batch 300/607 | Time/Batch(ms) 443.71 | Train Loss 0.0275 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:26:50,501 - Epoch  6 | Batch 400/607 | Time/Batch(ms) 442.74 | Train Loss 0.0251 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:27:34,726 - Epoch  6 | Batch 500/607 | Time/Batch(ms) 442.04 | Train Loss 0.0342 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9687 | precision 0.9375 | recall 1.0000
+2021-04-17 16:28:19,056 - Epoch  6 | Batch 600/607 | Time/Batch(ms) 443.11 | Train Loss 0.0137 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:28:25,331 - Epoch  6 | Time 272.0420 sec | Train Loss 0.0206 | Train Acc 0.9966 | micro-score 0.9966 | macro-score 0.9966 | precision 0.9958 | recall 0.9973
+2021-04-17 16:28:25,331 - Epoch  6 | Time 272.0420 sec | Valid Loss 2.9346 | Valid Acc 0.5964 | mirco-score 0.5964 | macro-score 0.5379 | precision 0.8295 | recall 0.2409
+2021-04-17 16:29:09,739 - Epoch  7 | Batch 100/607 | Time/Batch(ms) 444.08 | Train Loss 0.0125 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:29:53,657 - Epoch  7 | Batch 200/607 | Time/Batch(ms) 439.18 | Train Loss 0.0158 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:30:38,030 - Epoch  7 | Batch 300/607 | Time/Batch(ms) 443.72 | Train Loss 0.0085 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:31:22,317 - Epoch  7 | Batch 400/607 | Time/Batch(ms) 442.67 | Train Loss 0.0135 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:32:06,575 - Epoch  7 | Batch 500/607 | Time/Batch(ms) 442.36 | Train Loss 0.0175 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:32:50,813 - Epoch  7 | Batch 600/607 | Time/Batch(ms) 442.18 | Train Loss 0.0180 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:32:57,064 - Epoch  7 | Time 271.7097 sec | Train Loss 0.0147 | Train Acc 0.9973 | micro-score 0.9973 | macro-score 0.9973 | precision 0.9960 | recall 0.9987
+2021-04-17 16:32:57,064 - Epoch  7 | Time 271.7097 sec | Valid Loss 3.1563 | Valid Acc 0.6129 | mirco-score 0.6129 | macro-score 0.5613 | precision 0.8542 | recall 0.2706
+2021-04-17 16:33:41,350 - Epoch  8 | Batch 100/607 | Time/Batch(ms) 442.86 | Train Loss 0.0083 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:34:25,345 - Epoch  8 | Batch 200/607 | Time/Batch(ms) 439.95 | Train Loss 0.0155 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:35:09,913 - Epoch  8 | Batch 300/607 | Time/Batch(ms) 445.46 | Train Loss 0.0071 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:35:54,312 - Epoch  8 | Batch 400/607 | Time/Batch(ms) 443.79 | Train Loss 0.0065 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:36:38,557 - Epoch  8 | Batch 500/607 | Time/Batch(ms) 442.22 | Train Loss 0.0104 | Acc 0.9688 | micro-score 0.9688 | macro-score 0.9646 | precision 0.9091 | recall 1.0000
+2021-04-17 16:37:22,861 - Epoch  8 | Batch 600/607 | Time/Batch(ms) 442.85 | Train Loss 0.0088 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:37:29,019 - Epoch  8 | Time 271.9329 sec | Train Loss 0.0096 | Train Acc 0.9983 | micro-score 0.9983 | macro-score 0.9983 | precision 0.9965 | recall 1.0000
+2021-04-17 16:37:29,019 - Epoch  8 | Time 271.9329 sec | Valid Loss 3.2267 | Valid Acc 0.6161 | mirco-score 0.6161 | macro-score 0.5628 | precision 0.8804 | recall 0.2673
+2021-04-17 16:38:13,184 - Epoch  9 | Batch 100/607 | Time/Batch(ms) 441.64 | Train Loss 0.0097 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:38:57,473 - Epoch  9 | Batch 200/607 | Time/Batch(ms) 442.89 | Train Loss 0.0155 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:39:41,896 - Epoch  9 | Batch 300/607 | Time/Batch(ms) 444.21 | Train Loss 0.0135 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:40:26,167 - Epoch  9 | Batch 400/607 | Time/Batch(ms) 442.52 | Train Loss 0.0086 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:41:10,719 - Epoch  9 | Batch 500/607 | Time/Batch(ms) 445.30 | Train Loss 0.0010 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:41:55,062 - Epoch  9 | Batch 600/607 | Time/Batch(ms) 443.23 | Train Loss 0.0069 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:42:01,271 - Epoch  9 | Time 272.2291 sec | Train Loss 0.0092 | Train Acc 0.9984 | micro-score 0.9984 | macro-score 0.9984 | precision 0.9968 | recall 1.0000
+2021-04-17 16:42:01,272 - Epoch  9 | Time 272.2291 sec | Valid Loss 3.2787 | Valid Acc 0.6145 | mirco-score 0.6145 | macro-score 0.5604 | precision 0.8791 | recall 0.2640
+2021-04-17 16:42:45,753 - Epoch 10 | Batch 100/607 | Time/Batch(ms) 444.81 | Train Loss 0.0054 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:43:30,025 - Epoch 10 | Batch 200/607 | Time/Batch(ms) 442.71 | Train Loss 0.0140 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:44:14,672 - Epoch 10 | Batch 300/607 | Time/Batch(ms) 446.26 | Train Loss 0.0074 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:44:58,871 - Epoch 10 | Batch 400/607 | Time/Batch(ms) 441.80 | Train Loss 0.0113 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:45:43,583 - Epoch 10 | Batch 500/607 | Time/Batch(ms) 446.89 | Train Loss 0.0140 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:46:28,471 - Epoch 10 | Batch 600/607 | Time/Batch(ms) 448.66 | Train Loss 0.0021 | Acc 1.0000 | micro-score 1.0000 | macro-score 1.0000 | precision 1.0000 | recall 1.0000
+2021-04-17 16:46:34,907 - Epoch 10 | Time 273.6111 sec | Train Loss 0.0089 | Train Acc 0.9985 | micro-score 0.9985 | macro-score 0.9985 | precision 0.9969 | recall 1.0000
+2021-04-17 16:46:34,907 - Epoch 10 | Time 273.6111 sec | Valid Loss 3.3284 | Valid Acc 0.6161 | mirco-score 0.6161 | macro-score 0.5628 | precision 0.8804 | recall 0.2673
+2021-04-17 16:48:19,372 - 
+
+Train Loss 6.4852 | Train Acc 0.9300 | Train f1-score 0.9300 | Train f1-score-macro 0.9299 | Train precision 0.9624 | Train recall 0.8949
+2021-04-17 16:48:22,683 - 
+
+Test Loss 0.8442 | Test Acc 0.6079 | Test f1-score 0.6079 | Test f1-score-macro 0.5596 | Test precision 0.8155 | Test recall 0.2772
