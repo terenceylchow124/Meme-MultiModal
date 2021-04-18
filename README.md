@@ -18,8 +18,8 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - feel free to tune any hyper-parameter, i.e max_iter, batch,...
   > 
   > - run "python main.py"
-3. After training, the trained model and corresponding log file should be stored under ./pre_trained_models.  
-4. Training the MultiModal model using Memotion Dataset. 
+2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models.  
+3. Training the MultiModal model using Memotion Dataset. 
   > - set "train_reddit" to 0, "dataset" to "memotion" and "model" to "GatedAverageBERT" in utils/util_args. 
   > 
   > - load the pretrained bert model by modify the model name in initiate() function of main.py.
