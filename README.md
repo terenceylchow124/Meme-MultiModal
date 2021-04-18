@@ -12,16 +12,25 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 3. Put your Reddit and Memotion Dataset to ./data/reddit and ./data/memotion accordingly. 
 
 # Procedures
-1. Training the ALBERT model using Reddit Dataset. Please make sure you set "train_reddit" to 1, "dataset" to "reddit" in utils/util_args. 
-2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models.  
-3. Note that please modify the name of the pretrained model as "model_reddit_albert.pt".
-4. Training the MultiModal model using Memotion Dataset. Please make sure you set "train_reddit" to 0, "dataset" to "memotion" in utils/util_args. 
+1. Training the ALBERT model using Reddit Dataset.  
+  > - set "train_reddit" to 1, "dataset" to "reddit", "model" to "RedditBert", "bert_model" to "bert-base-uncased" in utils/util_args.  
+  > 
+  > - feel free to tune any hyper-parameter, i.e max_iter, batch,...
+  > 
+  > - run "python main.py"
+3. After training, the trained model and corresponding log file should be stored under ./pre_trained_models.  
+4. Training the MultiModal model using Memotion Dataset. 
+  > - set "train_reddit" to 0, "dataset" to "memotion" and "model" to "GatedAverageBERT" in utils/util_args. 
+  > 
+  > - load the pretrained bert model by modify the model name in initiate() function of main.py.
+  > 
+  > - run "python main.py"
 
 # Pretrained Model 
-| Model         | Task          | Test Acc % | Macro-F1-Score %  |
-| ------------- | ------------- | ---------- | ----------------- |
-| ALBERT-512    | Reddit        | 71.99      | 71.95             |
-| ALBERT-VGG16  | Memotion      | 68.32      | 53.55             |
+| Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % |
+| ---------------- | ------------- | ---------- | ----------------- | ----------- |
+| ALBERT+FC        | Reddit        | 60.79      | 55.96             | 72.40 (Acc) |
+| ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | 52.99 (F1)  |
  
 # Acknowledgment
 This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
