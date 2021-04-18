@@ -13,20 +13,19 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 
 # Procedures
 1. Training the ALBERT model using Reddit Dataset.  
-  > - go to utils/util_args/.  
+  > - go to utils/util_args/
   > - set "train_reddit" to 1
   > - set "dataset" to "reddit" 
   > - set "model" to "RedditBert"
   > - set "bert_model" to "bert-base-uncased"
-  > - feel free to tune any hyper-parameter, i.e max_iter, batch,...
-  > 
   > - run "python main.py"
 2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models/.  
 3. Training the MultiModal model using Memotion Dataset. 
-  > - set "train_reddit" to 0, "dataset" to "memotion" and "model" to "GatedAverageBERT" in utils/util_args. 
-  > 
+  > - go to utils/util_args/  
+  > - set "train_reddit" to 0 
+  > - set "dataset" to "memotion"
+  > - set "model" to "GatedAverageBERT"  
   > - load the pretrained bert model by modify the model name in initiate() function of main.py.
-  > 
   > - run "python main.py"
 
 # Pretrained Model 
