@@ -27,10 +27,10 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - run "python main.py"
 
 # Pretrained Model 
-| Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % |
-| ---------------- | ------------- | ---------- | ----------------- | ----------- |
-| ALBERT+FC        | Reddit        | 60.79      | 55.96             | 72.40 (Acc) |
-| ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | 52.99 (F1)  |
+| Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Model |
+| ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
+| ALBERT+FC        | Reddit        | 60.79      | 55.96             | 72.40 (Acc) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
+| ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | 52.99 (F1)  | [:white_check_mark:](https://drive.google.com/file/d/1Y78Kto6axhWLxf0mucsEW0WVCCHSjh-8/view?usp=sharing) |
  
 # Acknowledgment
 This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
