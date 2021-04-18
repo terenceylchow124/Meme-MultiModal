@@ -13,12 +13,15 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 
 # Procedures
 1. Training the ALBERT model using Reddit Dataset.  
-  > - set "train_reddit" to 1, "dataset" to "reddit", "model" to "RedditBert", "bert_model" to "bert-base-uncased" in utils/util_args.  
-  > 
+  > - go to utils/util_args/.  
+  > - set "train_reddit" to 1
+  > - set "dataset" to "reddit" 
+  > - set "model" to "RedditBert"
+  > - set "bert_model" to "bert-base-uncased"
   > - feel free to tune any hyper-parameter, i.e max_iter, batch,...
   > 
   > - run "python main.py"
-2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models.  
+2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models/.  
 3. Training the MultiModal model using Memotion Dataset. 
   > - set "train_reddit" to 0, "dataset" to "memotion" and "model" to "GatedAverageBERT" in utils/util_args. 
   > 
@@ -27,7 +30,7 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - run "python main.py"
 
 # Pretrained Model 
-Our model acheives 54.57% of Macro-F1-Score on Memotion dataset, the resulted log file (i.e. result_A21.log) can be found under pre_trained_models. 
+Resulted log files can be found under pre_trained_models/. 
 | Variant | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Download Link |
 | ------- | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
 | A2      | ALBERT+FC        | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
