@@ -29,10 +29,10 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - run "python main.py"
 
 # Pretrained Model 
-Resulted log files can be found under pre_trained_models/. 
-| Variant      | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Download Link |
-| ------------ | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
-| A2           | ALBERT+FC+Output | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
+Resulted log files can be found under pretrained_models/. 
+| Variant      | Model      | Task          | Test Acc % | Macro-F1 %  | Benchmark % | Download Link |
+| ------------ | ---------- | ------------- | ---------- | ----------------- | ----------- | ----- |
+| A2           | ALBERT+FC  | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
 | A2 (GML)     | ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | [52.99 (F1)](https://arxiv.org/pdf/2008.03781.pdf)  | [:white_check_mark:](https://drive.google.com/file/d/1ZF__AM2xoDfN941oa18kRGDTDWwULy_n/view?usp=sharing) |
  
 # Acknowledgment
