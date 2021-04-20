@@ -16,10 +16,10 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
   > - go to utils/util_args/
   > - set "train_reddit" to 1
   > - set "dataset" to "reddit" 
-  > - set "model" to "RedditBert"
-  > - set "bert_model" to "bert-base-uncased"
+  > - set "model" to "RedditAlbert"
+  > - set "bert_model" to "albert-base-v2"
   > - run "python main.py"
-2. After training, the trained model and corresponding log file should be stored under ./pre_trained_models/.  
+2. After training, the trained model and corresponding log file should be stored under ./pretrained_models/.  
 3. Training the MultiModal model using Memotion Dataset. 
   > - go to utils/util_args/  
   > - set "train_reddit" to 0 
@@ -30,10 +30,10 @@ In this project, memotion Dataset are mainly used while we apply transfer learni
 
 # Pretrained Model 
 Resulted log files can be found under pre_trained_models/. 
-| Variant | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Download Link |
-| ------- | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
-| A2      | ALBERT+FC        | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
-| A21     | ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | [52.99 (F1)](https://arxiv.org/pdf/2008.03781.pdf)  | [:white_check_mark:](https://drive.google.com/file/d/1Y78Kto6axhWLxf0mucsEW0WVCCHSjh-8/view?usp=sharing) |
+| Variant      | Model            | Task          | Test Acc % | Macro-F1-Score %  | Benchmark % | Download Link |
+| ------------ | ---------------- | ------------- | ---------- | ----------------- | ----------- | ----- |
+| A2           | ALBERT+FC+Output | Reddit        | 60.79      | 55.96             | [72.40 (Acc)](https://arxiv.org/pdf/1909.00252.pdf) | [:white_check_mark:](https://drive.google.com/file/d/16ArUFaJG6tfkyQEsq7unxg9u8nmni-q-/view?usp=sharing) |
+| A2 (GML)     | ALBERT+FC+VGG16  | Memotion      | 68.32      | 54.57             | [52.99 (F1)](https://arxiv.org/pdf/2008.03781.pdf)  | [:white_check_mark:](https://drive.google.com/file/d/1ZF__AM2xoDfN941oa18kRGDTDWwULy_n/view?usp=sharing) |
  
 # Acknowledgment
 This code is partial borrowed from [ConcatBERT model](https://github.com/IsaacRodgz/ConcatBERT).
