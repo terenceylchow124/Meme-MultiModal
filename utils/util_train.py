@@ -8,7 +8,7 @@ import sys
 import os
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="1,2"
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1"
 
 activation = {}
 def get_activation(name1, name2):
@@ -70,13 +70,11 @@ def train(train_loader, hyp_params, model, bert, tokenizer, feature_extractor, o
             preds = outputs
 
         preds_round = (preds > 0.5).float()
-        # print("actual output:", preds, "; expected:", targets)
         loss = criterion(outputs, targets)
         losses.append(loss.item())
         loss.backward()
         nn.utils.clip_grad_norm_(model.parameters(), hyp_params.clip)
         optimizer.step()
-        #optimizer.zero_grad()
 
         total_loss += loss.item() * hyp_params.batch_size
         results.append(preds)
@@ -99,9 +97,9 @@ def train(train_loader, hyp_params, model, bert, tokenizer, feature_extractor, o
     truths = torch.cat(truths)
     return results, truths, avg_loss
 
-def evaluate(valid_loader, hyp_params, model, bert, tokenizer, feature_extractor, criterion, test=False):
+def evaluate(valid_loader, hyp_params, model, bert, tokenizer, feature_extractor, criterion, train=False, train_loader=None):
     model.eval()
-    loader = test_loader if test else valid_loader
+    loader = train_loader if train else valid_loader
     total_loss = 0.0
 
     results = []
@@ -130,7 +128,7 @@ def evaluate(valid_loader, hyp_params, model, bert, tokenizer, feature_extractor
                 feature_images = feature_extractor.avgpool(feature_images)
                 feature_images = torch.flatten(feature_images, 1)
                 feature_images = feature_extractor.classifier[0](feature_images)
-
+              
             bert.bert.register_forward_hook(get_activation('last', 'pool'))
             outputs = bert(input_ids, attention_mask)
 
@@ -154,7 +152,7 @@ def evaluate(valid_loader, hyp_params, model, bert, tokenizer, feature_extractor
             results.append(preds)
             truths.append(targets)
 
-    avg_loss = total_loss / (hyp_params.n_test if test else hyp_params.n_valid)
+    avg_loss = total_loss / (hyp_params.n_train if train else hyp_params.n_valid)
 
     results = torch.cat(results)
     truths = torch.cat(truths)

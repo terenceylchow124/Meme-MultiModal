@@ -11,7 +11,7 @@ def get_args():
     # construct argument parser
     parser = argparse.ArgumentParser(description='Memotion Humor Detection')
 
-    # Tasks
+    # Need to modify 
     parser.add_argument('--train_reddit', type=int, default=1,
                         help='train reddit model (default: 1)')
     parser.add_argument('--dataset', type=str, default='reddit',
@@ -20,30 +20,24 @@ def get_args():
                         help='name of the model to use (Transformer, etc.)')
     parser.add_argument('--bert_model', type=str, default="albert-base-v2",
                         help='pretrained bert model to use')
-    #parser.add_argument('--bert_model', type=str, default="bert-base-uncased",
+    # parser.add_argument('--bert_model', type=str, default="bert-base-uncased",
     #                    help='pretrained bert model to use')
 
-
+    # Dataset
     parser.add_argument('--root_path', type=str, default='./data',
                         help='path for storing the dataset')
 
-    # Dropouts
-    parser.add_argument('--mlp_dropout', type=float, default=0.0,
-                        help='fully connected layers dropout')
-
-    # Architecture
-
-
+    # Multimodal Model Architecture
     parser.add_argument('--cnn_model', type=str, default="vgg16",
                         help='pretrained CNN to use for image feature extraction')
     parser.add_argument('--image_feature_size', type=int, default=4096,
                         help='image feature size extracted from pretrained CNN (default: 4096)')
-    parser.add_argument('--embed_size', type=int, default=2048,
-                        help='embedded image feature size by fc layer after feature extractor (default: 2048)')
     parser.add_argument('--bert_hidden_size', type=int, default=768,
                         help='bert hidden size for each word token (default: 768)')
+    parser.add_argument('--mlp_dropout', type=float, default=0.1,
+                        help='fully connected layers dropout')
 
-    # Tuning
+    # Network Hyper-parameters
     parser.add_argument('--batch_size', type=int, default=32, metavar='N',
                         help='batch size (default: 2)')
     parser.add_argument('--max_token_length', type=int, default=128,

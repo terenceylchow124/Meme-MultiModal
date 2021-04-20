@@ -25,12 +25,12 @@ def write_log(message):
 
 def save_model(args, model, name=''):
     name = name if len(name) > 0 else 'default_model'
-    torch.save(model, 'pre_trained_models/{}.pt'.format(name))
+    torch.save(model, 'pretrained_models/{}.pt'.format(name))
 
 
 def load_model(args, name=''):
     name = name if len(name) > 0 else 'default_model'
-    model = torch.load('pre_trained_models/{}.pt'.format(name))
+    model = torch.load('pretrained_models/{}.pt'.format(name))
     return model
 
 def metrics(results, truths):
