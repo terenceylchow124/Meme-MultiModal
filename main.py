@@ -15,7 +15,7 @@ import sys
 import os
 
 os.environ["CUDA_DEVICE_ORDER"]="PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="2,3"
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1"
 
 output_dim_dict = {
     'memotion': 2,
@@ -31,15 +31,13 @@ def initiate(hyp_params, tokenizer, train_loader, valid_loader, test_loader=None
     model = getattr(models, hyp_params.model+'Model')(hyp_params)
 
     if hyp_params.train_reddit == 1:
-        #bert = BertModel.from_pretrained(hyp_params.bert_model)
+        # bert = BertModel.from_pretrained(hyp_params.bert_model)
         bert = AlbertModel.from_pretrained(hyp_params.bert_model)
     else:
-        #bert = getattr(models, 'RedditModel')(hyp_params)
-        #bert.load_state_dict(torch.load('pre_trained_models/model_reddit.pt'))
-        bert = torch.load('pre_trained_models/model_reddit_albert.pt')
-        #bert = nn.Sequential(*list(bert.children())[:-2])
+        bert = torch.load('pre_trained_models/model_A1.pt')
 
     feature_extractor = torch.hub.load('pytorch/vision:v0.6.0', hyp_params.cnn_model, pretrained=True)
+    
     for param in feature_extractor.features.parameters():
         param.requires_grad = False
 
@@ -80,7 +78,6 @@ def train_model(settings, hyp_params, train_loader, val_loader, test_loader=None
     scheduler = settings['scheduler']
 
     best_valid = 1e8
-    # writer = SummaryWriter('runs/'+hyp_params.model)
     for epoch in range(1, hyp_params.num_epochs+1):
         start = time.time()
 
@@ -102,7 +99,8 @@ def train_model(settings, hyp_params, train_loader, val_loader, test_loader=None
                                              tokenizer,
                                              feature_extractor,
                                              criterion,
-                                             test=False)
+                                             train=False,
+                                             train_loader=None)
         end = time.time()
         duration = end-start
         scheduler.step(val_loss)
@@ -131,7 +129,8 @@ def train_model(settings, hyp_params, train_loader, val_loader, test_loader=None
                                          tokenizer,
                                          feature_extractor,
                                          criterion,
-                                         test=False)
+                                         train=True,
+                                         train_loader=train_loader)
 
     train_acc, train_f1, train_f1_macro, train_precision, train_recall  = metrics(results, truths)
     msg = "\n\nTrain Loss {:5.4f} | Train Acc {:5.4f} | Train f1-score {:5.4f} | Train f1-score-macro {:5.4f} | Train precision {:5.4f} | Train recall {:5.4f}".format(train_loss, train_acc, train_f1, train_f1_macro, train_precision, train_recall)
@@ -144,7 +143,8 @@ def train_model(settings, hyp_params, train_loader, val_loader, test_loader=None
                                          tokenizer,
                                          feature_extractor,
                                          criterion,
-                                         test=False)
+                                         train=False,
+                                         train_loader=None)
     test_acc, test_f1, test_f1_macro, test_precision, test_recall  = metrics(results, truths)
     msg = "\n\nTest Loss {:5.4f} | Test Acc {:5.4f} | Test f1-score {:5.4f} | Test f1-score-macro {:5.4f} | Test precision {:5.4f} | Test recall {:5.4f}".format(test_loss, test_acc, test_f1, test_f1_macro, test_precision, test_recall)
     print(msg)
@@ -167,7 +167,6 @@ def main():
             torch.set_default_tensor_type('torch.cuda.FloatTensor')
             use_cuda = True
 
-    # tokenizer = BertTokenizer.from_pretrained(args.bert_model)
     tokenizer = AutoTokenizer.from_pretrained(args.bert_model)
 
     print("Start loading the data....")

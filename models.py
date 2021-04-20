@@ -9,6 +9,7 @@ class RedditAlbertModel(nn.Module):
         super(RedditAlbertModel, self).__init__()
         self.bert = AlbertModel.from_pretrained(hyp_params.bert_model)
         self.drop = nn.Dropout(p=0.1)
+        #self.out = nn.Linear(hyp_params.bert_hidden_size, hyp_params.output_dim)
         self.out = nn.Linear(hyp_params.bert_hidden_size, 512)
         self.out2 = nn.Linear(512, hyp_params.output_dim)
 
@@ -16,13 +17,15 @@ class RedditAlbertModel(nn.Module):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         output = self.drop(outputs.pooler_output)
         output = self.out(output)
-        return self.out2(output)
+        output = self.out2(output)
+        return output
 
 class RedditBertModel(nn.Module):
     def __init__(self, hyp_params):
         super(RedditBertModel, self).__init__()
         self.bert = BertModel.from_pretrained(hyp_params.bert_model)
         self.drop = nn.Dropout(p=0.1)
+        #self.out = nn.Linear(hyp_params.bert_hidden_size, hyp_params.output_dim)
         self.out = nn.Linear(hyp_params.bert_hidden_size, 512)
         self.out2 = nn.Linear(512, hyp_params.output_dim)
 
@@ -30,7 +33,8 @@ class RedditBertModel(nn.Module):
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         output = self.drop(outputs.pooler_output)
         output = self.out(output)
-        return self.out2(output)
+        output = self.out2(output)
+        return output
 
 class GatedMultimodalLayer(nn.Module):
     """ Gated Multimodal Layer based on 'Gated multimodal networks, Arevalo1 et al.' (https://arxiv.org/abs/1702.01992) """
@@ -38,33 +42,33 @@ class GatedMultimodalLayer(nn.Module):
         super().__init__()
         self.size_in1, self.size_in2, self.size_out = size_in1, size_in2, size_out
 
-        # Weights hidden state modality 1
+        # weight for textual feature: w_t
         weights_hidden1 = torch.Tensor(size_out, size_in1)
         self.weights_hidden1 = nn.Parameter(weights_hidden1)
 
-        # Weights hidden state modality 2
+        # weight for visual feature: w_i
         weights_hidden2 = torch.Tensor(size_out, size_in2)
         self.weights_hidden2 = nn.Parameter(weights_hidden2)
 
-        # Weight for sigmoid
+        # Weight for sigmoid: w_h
         weight_sigmoid = torch.Tensor(size_out*2)
         self.weight_sigmoid = nn.Parameter(weight_sigmoid)
 
-        # initialize weights
         nn.init.kaiming_uniform_(self.weights_hidden1, a=math.sqrt(5))
         nn.init.kaiming_uniform_(self.weights_hidden2, a=math.sqrt(5))
 
-        # Activation functions
         self.tanh_f = nn.Tanh()
         self.sigmoid_f = nn.Sigmoid()
 
-    def forward(self, x1, x2):
-        h1 = self.tanh_f(torch.mm(x1, self.weights_hidden1.t()))
-        h2 = self.tanh_f(torch.mm(x2, self.weights_hidden2.t()))
-        x = torch.cat((h1, h2), dim=1)
-        z = self.sigmoid_f(torch.matmul(x, self.weight_sigmoid.t()))
-
-        return z.view(z.size()[0],1)*h1 + (1-z).view(z.size()[0],1)*h2
+    def forward(self, x_t, x_i):
+        h_t = self.tanh_f(torch.mm(x_t, self.weights_hidden1.t()))
+        h_i = self.tanh_f(torch.mm(x_i, self.weights_hidden2.t()))
+        y = torch.cat((h_t, h_i), dim=1)
+        z = self.sigmoid_f(torch.matmul(y, self.weight_sigmoid.t()))
+        z_t = z.view(z.size()[0],1)*h_t 
+        z_i = (1-z).view(z.size()[0],1)*h_i
+        f = z_t + z_i
+        return f
 
 
 class AverageBERTModel(nn.Module):
