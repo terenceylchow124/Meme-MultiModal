@@ -14,7 +14,7 @@ import numpy as np
 import logging
 
 LOG_FORMAT = "%(asctime)s - %(message)s"
-logging.basicConfig(filename= "./pre_trained_models/result.log",
+logging.basicConfig(filename= "./pretrained_models/result.log",
                     level = logging.INFO,
                     format=LOG_FORMAT)
 
